@@ -1,0 +1,57 @@
+<p><img src="https://bumblebee-public-images.s3.us-west-2.amazonaws.com/bumblebee-logo-1.jpeg" style="width: 15%; height: auto;" alt="Bumblebee Networks Logo"></p>
+<p>Hi there,</p>
+<p>We are excited to share some new features in the Bumblebee Platform that we think you will find really helpful. Here is what&#39;s new:</p>
+<h3 id="speed-test-server">Speed Test Server</h3>
+<p>A Bumblebee CPE can now be used as a Speed Test Server. Any browser that can reach the CPE can run a speed test to it. For example, a service provider can run a speed test from a colocation facility to the CPE.</p>
+<p>To run a test, click Internet CPE on the left navigation menu. Select a CPE and click Actions -&gt; Start Speed Test Server. Click GO to run the test from your browser, or copy the link to run it from another location.</p>
+<p>Note: the link expires after 15 minutes. The CPE accepts speed test connections only during that window.</p>
+<p>To learn more, check out <a href="https://www.bumblebeenet.com/post/speed-test-server">Bumblebee Speed Test Server</a>.</p>
+<h3 id="wan-failover-test">WAN Failover Test</h3>
+<p>WAN Failover Test lets you simulate a WAN link failure remotely, without needing on-site personnel to unplug the WAN Ethernet cable. When the configured interval expires, the WAN interface resumes operation. This controlled outage lets you test failover handling and prepare for disaster recovery.</p>
+<p>To configure, click Internet CPE on the left navigation menu. Select a CPE and click Actions -&gt; WAN Failover Test. Enter the test duration in minutes and click Start Test. When the timer expires, normal operation resumes. To end the test early, click End Test.</p>
+<p>Note: this test takes the live WAN link down for the duration you set. End Test requires a cellular out-of-band connection on the CPE; without one, the WAN resumes when the timer expires.</p>
+<h3 id="bn-cpe-10gf-c-ready-for-order">BN-CPE-10GF(C) Ready for Order</h3>
+<p>BN-CPE-10GF and BN-CPE-10GFC are new product codes now available to order. Both have 2x 10G SFP+ ports, 6x 2.5G RJ45 ports and dual power supplies. The BN-CPE-10GFC adds an integrated 5G cellular modem. Both support the same software features as the 1000 series.</p>
+<p>To create a CPE, click Internet CPE. Click Create Device and, in the Product Code field, select BN-CPE-10GF or BN-CPE-10GFC.</p>
+<h3 id="create-cpe-enhancements">Create CPE Enhancements</h3>
+<ul>
+<li><p><strong>Clone Device</strong> saves you time when creating a new CPE by copying all fields of a selected CPE, so you don’t have to enter every field. To configure, select a CPE and click Actions -&gt; Clone Device.</p>
+</li>
+<li><p><strong>Checkbox for identical addresses</strong> saves you from typing the shipping address when it is the same as the site address. To configure, click Create Device. In the Shipping Address section, check the box if the shipping address is the same as the site address.</p>
+</li>
+</ul>
+<h3 id="down-detection-timer-enhancements">Down Detection Timer Enhancements</h3>
+<p>Down Notification Interval is now called Down Detection Timer. The setting works the same way as before.</p>
+<ul>
+<li><p><strong>Entity Down Detection Timer</strong> is a new option to apply the Down Detection Timer across all sites (CPEs assigned to the entity) by configuring the timer at the entity level. To configure, go to Entities on the left navigation menu. Select an entity and click Actions -&gt; Edit Down Detection Timer. Enter the time in minutes and click Save.</p>
+</li>
+<li><p><strong>Mute Link Alerts Indefinitely</strong> is a new option to stop alert messages for a specific site until you turn the mute off. It complements the existing option to mute alerts for a set number of hours, after which they turn back on automatically. To configure, click Internet CPE on the left navigation menu. Select a CPE and click Actions -&gt; Edit Down Detection Timer. Check the box Mute Link Alerts, then check Mute Indefinitely.
+For more details, check out <a href="https://www.bumblebeenet.com/post/how-to-change-outage-detection-timer-interval">Down Detection Timer</a>.</p>
+</li>
+</ul>
+<h3 id="bn-cpe-ip-enhancements">BN-CPE-IP Enhancements</h3>
+<ul>
+<li><p><strong>Test Service</strong> lets you run an IP reachability test before and after activating the service. To perform the test, select the CPE (with the product code BN-CPE-IP) and click Actions -&gt; Test Service.</p>
+</li>
+<li><p><strong>Clone Device</strong> is now also available for BN-CPE-IP.</p>
+</li>
+<li><p><strong>Assign Entity</strong> assigns a BN-CPE-IP site to an entity. To configure, select the CPE and click Actions -&gt; Assign Entity.</p>
+</li>
+</ul>
+<h3 id="app-visibility-enhancements">App Visibility Enhancements</h3>
+<p><a href="https://www.bumblebeenet.com/post/application-visibility-dashboard">Bumblebee App Visibility Dashboard</a> provides L7 application visibility and uses AI to classify applications into categories. You can now specify the percentage of traffic to capture and analyze. In a high-performance environment, statistical sampling is a realistic way to capture traffic and still get a good representation of the applications going through the CPE.</p>
+<p>To configure, click Internet CPE. Select the CPE. Click Actions -&gt; Edit App Visibility. Check the box Advanced. Enter a number from 5 to 100, to capture 5% to 100% of the traffic. The default is 100%.</p>
+<h3 id="speed-test-enhancements">Speed Test Enhancements</h3>
+<ul>
+<li><p><strong>Ookla Server ID List</strong>: the Advanced option in Speed Test now provides a list of Ookla server IDs to choose from, in addition to entering a specific server ID. The list shows the six servers geographically nearest to the CPE. To run an advanced speed test, click Internet CPE on the left navigation menu. Select a CPE and click Actions -&gt; Run Speed Test -&gt; Ookla Speedtest -&gt; Advanced -&gt; Use a specific Ookla speed test server. Select a server from the dropdown, or enter an ID if you know it.</p>
+</li>
+<li><p><strong>Display Traceroute</strong>: after an advanced speed test is completed, you can view the traceroute to the selected Ookla server. This helps service providers identify the routers in the data path when troubleshooting underperforming routers. To view the traceroute after a test is complete, click to expand View Traceroute.</p>
+</li>
+</ul>
+<p>These updates are designed to make your experience even better. Ready to check them out? Just log into your account to give them a try.</p>
+<p><a href="https://app.bumblebeenet.com/login">Try the New Features</a></p>
+<p>To learn more, check out <a href="https://www.bumblebeenet.com/post/new-feature-updates">New Releases</a>.</p>
+<p>Have feedback or questions? Reach out to us at <a href="mailto:support@bumblebeenet.com">support@bumblebeenet.com</a>. We would love to hear from you!</p>
+<p>Thanks for being part of the Bumblebee Platform.</p>
+<p>Cheers,</p>
+<p>The Bumblebee Team</p>
